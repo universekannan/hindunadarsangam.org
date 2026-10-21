@@ -1,0 +1,1 @@
+<?php readfile(__DIR__ . '/contact.html');
