@@ -15,7 +15,7 @@ const replacement=`const write = (file,title,content)=>{
  html=html.replace('page.js?v=20261021-3','page.js?v=20261021-4');
  const top=original.match(/<section class="top-bar">[\\s\\S]*?<\\/section>/)[0];
  html=html.replace(/<div class="topbar">[\\s\\S]*?<\\/div><\\/div>/,top);
- html=html.replace(/<footer>[\\s\\S]*?<\\/footer>/,'<footer class="footer-bottom"><div class="container text-center"><p>Website Developed By <a href="http://galaxy-ts.co/">Galaxy Technologies Solutions Pvt Ltd</a></p></div></footer>');
+ html=html.replace(/<footer>[\\s\\S]*?<\\/footer>/,'<footer class="footer-bottom"><div class="container text-center"><p>Website Developed By <a href="http://galaxy-ts.com/">Galaxy Technologies Solutions Pvt Ltd</a></p></div></footer>');
  fs.writeFileSync(file,html);
 };`;
 if(!build.includes(old))throw Error('Write template not found');
