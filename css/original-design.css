@@ -13,3 +13,12 @@ footer.footer-bottom{background:#262f36;border-top:1px solid #2d373f;padding:22p
 @media(max-width:1024px){.brand img{margin:auto}.brand{padding-bottom:30px}}
 @media(max-width:768px){.wrap,.brand .wrap{width:calc(100% - 30px);max-width:none}.brand .wrap{width:100%}.site-nav .menu-toggle{background:#f14b05;margin:15px 0;padding:8px 12px}.site-nav #navigation a{padding:14px 19px;background:#f14b05;border-bottom:1px solid white;font-size:14px;color:white}.site-nav #navigation{padding-bottom:0}.history-layout{grid-template-columns:1fr}.section,.sec-padding{padding:40px 0}.recent-causes .sec-title p,.motto{font-size:24px}.event-feature .mt-md-50{margin-top:50px}.page-heading h1{font-size:30px}.slideshow .slides{height:65.81197vw}.slide-controls{bottom:8px}.history-layout .history-aside img{max-width:100%}.card{padding:20px}}
 @media(max-width:480px){.top-bar .left-text p{line-height:20px;padding:14px 0}.top-bar .social-icons{float:none!important;text-align:center}.top-bar .social-icons ul li a{border-top:1px solid #eaeaea}.event-feature h3{font-size:22px}.recent-causes .sec-title p,.motto{font-size:20px}}
+
+/* Keep the mobile header compact and the menu target as wide as its bar. */
+@media(max-width:768px){
+  .brand{padding-bottom:0}
+  .site-nav .nav-inner{display:block;width:100%;max-width:none}
+  .site-nav .menu-toggle{display:flex;align-items:center;gap:10px;width:100%;margin:0;padding:12px 15px;text-align:left}
+  .site-nav #navigation{display:none}
+  .site-nav #navigation.open{display:flex;flex-direction:column}
+}
